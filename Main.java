@@ -164,7 +164,7 @@ public class Main {
     }
 
 
-    // Repeticion de codigo, pense en arreglarlo con una interface pero no me termino de cerrar.
+    // Repeticion de codigo, se podria hacer una sola funcion con un parametro indicando que tipo de clase voy a filtrar, pero lo hice de esta manera para poder adicionar funcinoes a futuro.
 
     public static Book buscarLibroPorId(List<Book>books, long idLibro){
         for (Book b : books) {
@@ -358,4 +358,5 @@ class Loan {
     public void setReturned(Boolean bool){
         returned = bool;
     }
+
 }
